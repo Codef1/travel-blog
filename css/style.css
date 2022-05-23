@@ -1,13 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
 
+:root {
+  --border-color: #eaeaeb;
+  --primary-color: #ffb79b;
+  --shadow-color: rgb(0, 0, 0, 0.1);
+  --text-color: #4c4c4c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--text-color);
 }
 
 .navigation {
-  box-shadow: 0px 1px 5px #ccc;
+  box-shadow: 0px 1px 5px var(--shadow-color);
   display: flex;
   justify-content: space-around;
   padding: 1rem;
@@ -21,28 +33,106 @@ body {
   padding: 0;
 }
 
-.menu-item {
+.menu__item {
   margin: 0 1.5rem;
 }
 
-.menu-item.active {
-  color: #ffb79b;
+.menu__item.active {
+  color: var(--primary-color);
 }
 
-.menu-link {
+.menu__link {
+  color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  color: #4c4c4c;
 }
 
-.menu-link:hover {
-  color: #ffb79b;
+.menu__link:hover {
+  color: var(--primary-color);
 }
 
-.social-media .menu-item {
+.social-media .menu__item {
   margin: 0 0.7rem;
 }
 
 .icon {
   height: 15px;
+}
+
+.carousel-wrapper {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel-wrapper button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 5px var(--shadow-color);
+}
+
+.carousel__btn--next {
+  right: -20px;
+}
+
+.carousel__btn--prev {
+  left: -20px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.card {
+  box-shadow: 0 1px 5px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  margin: 0.4rem;
+  width: 24%;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__body {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__title {
+  border-bottom: 3px solid var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.card__desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.card__btn {
+  border: 1px solid var(--border-color);
+  color: inherit;
+  margin: 1rem 0 0 0;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.card__btn:hover {
+  color: var(--primary-color);
 }
