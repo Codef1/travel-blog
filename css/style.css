@@ -74,6 +74,8 @@ body {
   height: 15px;
 }
 
+/* Home.html styles */
+
 .header {
   align-items: center;
   background-attachment: fixed;
@@ -244,4 +246,14 @@ body {
     width: 97%;
     max-height: none;
   }
+}
+
+/* About.html style */
+
+.header.about-page {
+  height: 30vh;
+}
+
+.container {
+  margin: 7em 15rem;
 }
