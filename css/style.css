@@ -60,21 +60,22 @@ body {
 }
 
 .carousel-wrapper {
-  width: 90%;
-  position: relative;
   margin: 0 auto;
+  position: relative;
+  width: 90%;
 }
 
 .carousel-wrapper button {
-  width: 40px;
-  height: 40px;
+  background-color: #fff;
   border-radius: 50%;
   border: 1px solid var(--border-color);
-  background-color: #fff;
+  box-shadow: 0 0 5px var(--shadow-color);
+  cursor: pointer;
+  height: 40px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  box-shadow: 0 0 5px var(--shadow-color);
+  width: 40px;
 }
 
 .carousel__btn--next {
@@ -86,14 +87,19 @@ body {
 }
 
 .carousel {
-  display: flex;
   overflow: hidden;
+}
+
+.carousel__items {
+  display: flex;
+  transition: transform 0.5s;
 }
 
 .card {
   box-shadow: 0 1px 5px var(--shadow-color);
   display: flex;
   flex-direction: column;
+  height: 350px;
   margin: 0.4rem;
   width: 24%;
 }
@@ -118,16 +124,16 @@ body {
 }
 
 .card__desc {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   width: 100%;
 }
 
 .card__btn {
   border: 1px solid var(--border-color);
   color: inherit;
-  margin: 1rem 0 0 0;
+  margin: 1.7rem 0 0 0;
   padding: 0.6rem 1.2rem;
   text-decoration: none;
   text-transform: capitalize;
