@@ -2,6 +2,8 @@ const carouselContainer = document.querySelector(".carousel");
 const carouselItems = document.querySelector(".carousel__items");
 const carouselNextBtn = document.querySelector(".carousel__btn--next");
 const carouselPrevBtn = document.querySelector(".carousel__btn--prev");
+const burgerIcon = document.querySelector(".burger-menu");
+const mainMenu = document.querySelector(".main-menu");
 
 let nextXPosition = 0;
 
@@ -23,4 +25,9 @@ carouselPrevBtn.addEventListener("click", function () {
   nextXPosition = nextXPosition + carouselContainer.offsetWidth;
   carouselItems.style = `transform: translateX(${nextXPosition}px)`;
   console.log(nextXPosition);
+});
+
+burgerIcon.addEventListener("click", function () {
+  console.log(mainMenu.style.display);
+  mainMenu.style.display = mainMenu.style.display !== "flex" ? "flex" : "none";
 });
