@@ -75,6 +75,7 @@ body {
 }
 
 .btn {
+  background-color: transparent;
   border: 1px solid var(--border-color);
   color: inherit;
   cursor: pointer;
@@ -285,4 +286,42 @@ body {
 .btn-old-posts {
   padding: 1rem;
   margin-top: 4rem;
+}
+
+/* Contact.html styles */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.form__control {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+.form__label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form__input {
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  height: 40px;
+  padding: 0.5rem;
+  color: var(--text-color);
+}
+
+.form__input.message {
+  height: 80px;
+}
+
+.form .btn {
+  border-radius: 15px;
+  font-weight: 600;
+  padding: 1rem;
+  text-transform: uppercase;
 }
