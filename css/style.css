@@ -74,6 +74,14 @@ body {
   height: 15px;
 }
 
+.success {
+  color: #007400;
+  border: 1px solid #01af01;
+  border-radius: 15px;
+  padding: 0.8rem;
+  background-color: #b0ffb0;
+}
+
 .btn {
   background-color: transparent;
   border: 1px solid var(--border-color);
@@ -363,4 +371,11 @@ body {
   font-weight: 600;
   padding: 1rem;
   text-transform: uppercase;
+}
+
+.form__error {
+  color: red;
+  display: none;
+  font-size: 0.9rem;
+  padding-top: 0.3rem;
 }
