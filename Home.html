@@ -70,36 +70,141 @@
         <h1 class="header__title">Travel Blog</h1>
       </div>
     </header>
-    <main>
-      <div class="carousel-wrapper">
-        <h3 class="carousel__title">Recent Posts</h3>
-        <div class="carousel">
-          <div class="carousel__items">
-            <!-- <div class="carousel__item card">
-              <div class="card__header">
-                <img
-                  class="card__image"
-                  src="imgs/solid-gray.webp"
-                  alt="solid gray"
-                />
-              </div>
-              <div class="card__body">
-                <div class="card__title">Lorem, ipsum dolor.</div>
-                <div class="card__desc">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Beatae minus voluptatum autem.
-                </div>
-                <a href="#" class="btn card__btn">read more</a>
-              </div>
-            </div> -->
+    <main class="main">
+      <div class="main-content">
+        <div class="dest">
+          <h3 class="dest__title">Destinations</h3>
+          <div class="dest__list">
+            <div class="card">
+              <div class="card__overlay"></div>
+              <img src="imgs/eurpe.jpg" alt="europe" class="card__img" />
+              <h3 class="card__title">Europe</h3>
+            </div>
+            <div class="card">
+              <div class="card__overlay"></div>
+              <img src="imgs/asia.jpg" alt="asia" class="card__img" />
+              <h3 class="card__title">Asia</h3>
+            </div>
+            <div class="card">
+              <div class="card__overlay"></div>
+              <img
+                src="imgs/north-america.jpg"
+                alt="north america"
+                class="card__img"
+              />
+              <h3 class="card__title">america</h3>
+            </div>
+            <div class="card">
+              <div class="card__overlay"></div>
+              <img src="imgs/africa.jpg" alt="africa" class="card__img" />
+              <h3 class="card__title">africa</h3>
+            </div>
           </div>
         </div>
-        <button class="carousel__btn--next">&gt;</button>
-        <button class="carousel__btn--prev">&lt;</button>
+        <div class="carousel-wrapper">
+          <h3 class="carousel__title">Recent Posts</h3>
+          <div class="carousel">
+            <div class="carousel__items">
+              <!-- <div class="carousel__item card">
+                <div class="card__header">
+                  <img
+                    class="card__image"
+                    src="imgs/solid-gray.webp"
+                    alt="solid gray"
+                  />
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Lorem, ipsum dolor.</div>
+                  <div class="card__desc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Beatae minus voluptatum autem.
+                  </div>
+                  <a href="#" class="btn card__btn">read more</a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <button class="carousel__btn--next">&gt;</button>
+          <button class="carousel__btn--prev">&lt;</button>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h3 class="sidebar__title">Sidebar</h3>
+        <div class="search-box">
+          <input type="text" class="input-search" placeholder="Search" />
+          <img class="icon" src="imgs/search-icon.svg" alt="search icon" />
+        </div>
+        <div class="categories">
+          <h3 class="cat__title">Categories</h3>
+          <a href="#" class="cat">Travel Tips</a>
+          <a href="#" class="cat">Travel Gear</a>
+          <a href="#" class="cat">Travel Planning</a>
+          <a href="#" class="cat">Family Travel</a>
+          <a href="#" class="cat">Travel Insurance</a>
+          <a href="#" class="cat">Travel Inspiration</a>
+          <a href="#" class="cat">Blogging</a>
+        </div>
+        <div class="side-social">
+          <h3 class="side-social__title">Social Media</h3>
+          <div class="icon-group">
+            <img
+              class="icon"
+              src="imgs/facebook-f-brands.svg"
+              alt="facebook icon"
+            />
+            <img
+              class="icon"
+              src="imgs/twitter-brands.svg"
+              alt="twitter icon"
+            />
+            <img
+              class="icon"
+              src="imgs/instagram-brands.svg"
+              alt="instagram icon"
+            />
+            <img class="icon" src="imgs/rss-solid.svg" alt="rss icon" />
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">
-      <p>Copyright &copy;2022</p>
+      <div class="footer__content">
+        <div class="newsletter">
+          <h3 class="newsletter__title">Subscribed & newsletter</h3>
+          <p class="newsletter__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            pariatur doloribus, natus similique quidem voluptatum illo soluta.
+            Qui, dolore dignissimos.
+          </p>
+          <form class="newsletter__form">
+            <input
+              type="text"
+              class="newsletter__name"
+              id="newsletterName"
+              placeholder="Your Name"
+            />
+            <input
+              type="text"
+              class="newsletter__email"
+              id="newsletterEmail"
+              placeholder="Your Email"
+            />
+            <button class="btn">Subscribed now</button>
+          </form>
+        </div>
+        <div class="footer__about-me">
+          <h3 class="about-me__title">About me</h3>
+          <p class="about-me__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            velit corrupti perspiciatis soluta ipsum ratione quod voluptatibus
+            assumenda inventore iste, nisi nam provident eligendi eum quo,
+            asperiores libero accusamus distinctio vero quisquam, alias
+            exercitationem. Enim eveniet vero consequatur neque blanditiis.
+          </p>
+          <a href="/About.html" class="btn">read more about me</a>
+        </div>
+      </div>
+      <p class="copyright">Copyright &copy;2022</p>
     </footer>
     <script src="js/script.js"></script>
     <script src="js/HomePage.js"></script>

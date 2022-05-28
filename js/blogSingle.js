@@ -16,9 +16,9 @@ fetch(request)
     };
     let postContent = `
         <div class="post__header">
-          <img src=${data._embedded["wp:featuredmedia"][0].source_url} alt=${
+          <img src=${data._embedded["wp:featuredmedia"][0].source_url} alt="${
       data._embedded["wp:featuredmedia"][0].alt_text
-    } class="post__img" />
+    }" class="post__img" />
           <h3 class="post__title">${data.title.rendered}</h3>
           <div class="post__subtitle">
             <div>By <span class="post__author">${

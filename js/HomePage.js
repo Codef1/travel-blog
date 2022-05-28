@@ -44,7 +44,7 @@ function generateCarouselItems() {
                 <div class="card__desc">
                   ${el.excerpt.rendered}
                 </div>
-                <a href="#" class="btn card__btn">read more</a>
+                <a href="/BlogSingle.html?id=${el.id}" class="btn card__btn">read more</a>
               </div>
             </div>
         `;
