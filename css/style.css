@@ -12,6 +12,7 @@
 }
 
 body {
+  background-color: #f7f7f7;
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
@@ -378,4 +379,52 @@ body {
   display: none;
   font-size: 0.9rem;
   padding-top: 0.3rem;
+}
+
+/* BlogSingle.html styles */
+.blog-post {
+  width: 70%;
+  background-color: #fff;
+}
+
+.post__body {
+  padding: 2rem;
+}
+
+.post__title,
+.post__subtitle {
+  padding: 0 2rem;
+}
+
+.post__img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.post__subtitle {
+  display: flex;
+  font-weight: 600;
+}
+
+.post__author {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+.modal {
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(8px);
+}
+
+.modal img {
+  width: 70%;
 }

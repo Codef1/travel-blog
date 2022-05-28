@@ -39,7 +39,7 @@ function generatePosts() {
               <img
                 class="card__image"
                 src=${el._embedded["wp:featuredmedia"][0].source_url}
-                alt="solid gray"
+                alt=${el._embedded["wp:featuredmedia"][0].alt_text}
               />
             </div>
             <div class="card__body">
@@ -47,7 +47,7 @@ function generatePosts() {
               <div class="card__desc">
                 ${el.excerpt.rendered}
               </div>
-              <a href="#" class="btn card__btn">read more</a>
+              <a href='/BlogSingle.html?id=${el.id}' class="btn card__btn">read more</a>
             </div>
           </div>
         `;
