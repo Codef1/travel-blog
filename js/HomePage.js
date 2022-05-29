@@ -29,6 +29,7 @@ function generateCarouselItems() {
   fetch(request)
     .then((response) => response.json())
     .then((data) => {
+      carouselItems.innerHTML = "";
       for (let el of data) {
         carouselItemHTML = `
             <div class="carousel__item card">
