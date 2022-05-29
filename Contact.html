@@ -70,51 +70,42 @@
         <h1 class="header__title">Travel Blog</h1>
       </div>
     </header>
-    <main>
-      <div class="container">
-        <h2>Contact Us</h2>
-        <form action="" class="form contact-us">
-          <div class="form__control">
-            <label class="form__label" for="name">Name</label>
-            <input class="form__input" type="text" name="name" id="name" />
-            <div class="form__error" id="nameError">
-              Please enter your name.
-            </div>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="" class="form contact-us">
+        <div class="form__control">
+          <label class="form__label" for="name">Name</label>
+          <input class="form__input" type="text" name="name" id="name" />
+          <div class="form__error" id="nameError">Please enter your name.</div>
+        </div>
+        <div class="form__control">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" type="text" name="email" id="email" />
+          <div class="form__error" id="emailError">
+            Please enter your email address.
           </div>
-          <div class="form__control">
-            <label class="form__label" for="email">Email</label>
-            <input class="form__input" type="text" name="email" id="email" />
-            <div class="form__error" id="emailError">
-              Please enter your email address.
-            </div>
+        </div>
+        <div class="form__control">
+          <label class="form__label" for="subject">Subject</label>
+          <input class="form__input" type="text" name="subject" id="subject" />
+          <div class="form__error" id="subjectError">
+            Please enter the subject. (at least 15 characters)
           </div>
-          <div class="form__control">
-            <label class="form__label" for="subject">Subject</label>
-            <input
-              class="form__input"
-              type="text"
-              name="subject"
-              id="subject"
-            />
-            <div class="form__error" id="subjectError">
-              Please enter the subject. (at least 15 characters)
-            </div>
+        </div>
+        <div class="form__control">
+          <label class="form__label" for="message">Message</label>
+          <textarea
+            class="form__input message"
+            name="message"
+            id="message"
+          ></textarea>
+          <div class="form__error" id="messageError">
+            Please enter the message. (at least 25 characters)
           </div>
-          <div class="form__control">
-            <label class="form__label" for="message">Message</label>
-            <textarea
-              class="form__input message"
-              name="message"
-              id="message"
-            ></textarea>
-            <div class="form__error" id="messageError">
-              Please enter the message. (at least 25 characters)
-            </div>
-          </div>
-          <button class="btn">Submit</button>
-        </form>
-      </div>
-    </main>
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
     <footer class="footer">
       <p>Copyright &copy;2022</p>
     </footer>

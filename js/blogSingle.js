@@ -45,19 +45,3 @@ fetch(request)
       imageModal(e.target.src);
     });
   });
-
-let imageModal = (src) => {
-  const modal = document.createElement("div");
-  modal.setAttribute("class", "modal");
-  document.querySelector(".main").append(modal);
-
-  const modalImg = document.createElement("img");
-  modalImg.setAttribute("src", src);
-  modal.append(modalImg);
-
-  modal.addEventListener("click", (e) => {
-    if (e.target == modal) {
-      modal.remove();
-    }
-  });
-};

@@ -70,9 +70,9 @@
         <h1 class="header__title">Travel Blog</h1>
       </div>
     </header>
-    <main class="main">
-      <div class="main-content">
-        <div class="dest">
+    <div class="home-container">
+      <div class="content">
+        <section class="dest">
           <h3 class="dest__title">Destinations</h3>
           <div class="dest__list">
             <div class="card">
@@ -100,8 +100,8 @@
               <h3 class="card__title">africa</h3>
             </div>
           </div>
-        </div>
-        <div class="carousel-wrapper">
+        </section>
+        <section class="carousel-wrapper">
           <h3 class="carousel__title">Recent Posts</h3>
           <div class="carousel">
             <div class="carousel__items">
@@ -194,15 +194,69 @@
           </div>
           <button class="carousel__btn--next">&gt;</button>
           <button class="carousel__btn--prev">&lt;</button>
-        </div>
+        </section>
+        <section class="gallery">
+          <h3 class="gallery__title">Photo Gallery</h3>
+          <div class="gallery__body">
+            <div class="gallery__col">
+              <img
+                src="/imgs/australia.jpg"
+                alt="australis"
+                class="gallery__img"
+              />
+              <img src="/imgs/africa.jpg" alt="africa" class="gallery__img" />
+              <img
+                src="/imgs/south-america.jpg"
+                alt="south america"
+                class="gallery__img"
+              />
+              <img
+                src="/imgs/spencer-davis-Ivwyqtw3PzU-unsplash.jpg"
+                alt="south america"
+                class="gallery__img"
+              />
+            </div>
+            <div class="gallery__col">
+              <img
+                src="/imgs/north-america.jpg"
+                alt="north america"
+                class="gallery__img"
+              />
+              <img
+                src="/imgs/stefan-stefancik-0wMmxNB6Xzc-unsplash.jpg"
+                alt="north america"
+                class="gallery__img"
+              />
+              <img src="/imgs/asia.jpg" alt="asia" class="gallery__img" />
+              <img src="/imgs/eurpe.jpg" alt="europe" class="gallery__img" />
+            </div>
+            <div class="gallery__col">
+              <img
+                src="/imgs/hero-pic.jpg"
+                alt="hero pic"
+                class="gallery__img"
+              />
+              <img
+                src="/imgs/cyril-mazarin-WSvth_lwCi0-unsplash.jpg"
+                alt="random pic"
+                class="gallery__img"
+              />
+              <img
+                src="/imgs/jack-ward-rknrvCrfS1k-unsplash.jpg"
+                alt="random pic"
+                class="gallery__img"
+              />
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="sidebar">
+      <aside class="sidebar">
         <h3 class="sidebar__title">Sidebar</h3>
-        <div class="search-box">
+        <section class="search-box">
           <input type="text" class="input-search" placeholder="Search" />
           <img class="icon" src="imgs/search-icon.svg" alt="search icon" />
-        </div>
-        <div class="categories">
+        </section>
+        <section class="categories">
           <h3 class="cat__title">Categories</h3>
           <a href="#" class="cat">Travel Tips</a>
           <a href="#" class="cat">Travel Gear</a>
@@ -211,8 +265,8 @@
           <a href="#" class="cat">Travel Insurance</a>
           <a href="#" class="cat">Travel Inspiration</a>
           <a href="#" class="cat">Blogging</a>
-        </div>
-        <div class="side-social">
+        </section>
+        <section class="side-social">
           <h3 class="side-social__title">Social Media</h3>
           <div class="icon-group">
             <img
@@ -232,9 +286,10 @@
             />
             <img class="icon" src="imgs/rss-solid.svg" alt="rss icon" />
           </div>
-        </div>
-      </div>
-    </main>
+        </section>
+      </aside>
+    </div>
+
     <footer class="footer">
       <div class="footer__content">
         <div class="newsletter">
