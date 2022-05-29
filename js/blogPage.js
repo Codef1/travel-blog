@@ -6,6 +6,8 @@ let currentPage = 1;
 let totalPages = 0;
 let postsPerPage = 10;
 
+loading.style.display = "none";
+
 function generatePosts() {
   btnLoadPosts.style.display = "none";
   if (currentPage == totalPages) {
@@ -31,7 +33,7 @@ function generatePosts() {
     .then((data) => {
       loading.style.display = "none";
       btnLoadPosts.style.display = "block";
-
+      blogPost.innerHTML = "";
       for (let el of data) {
         postCard = `
             <div class="card">
