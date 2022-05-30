@@ -114,7 +114,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 2rem;
-  width: 100%;
+  width: 75%;
 }
 
 .loading {
@@ -278,7 +278,7 @@ body {
 }
 
 .sidebar {
-  margin: 2rem 4rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -506,7 +506,9 @@ body {
 
 .about-title {
   border-bottom: 3px solid var(--primary-color);
-  padding-bottom: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: 100%;
 }
 
 .about-img {
@@ -628,6 +630,10 @@ body {
 @media only screen and (max-width: 1025px) {
   .sidebar {
     display: none;
+  }
+
+  .content {
+    width: 85%;
   }
 
   .blog-posts {
