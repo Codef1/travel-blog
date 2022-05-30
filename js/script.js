@@ -1,4 +1,4 @@
-const apiEndpoint = "http://localhost:8888/headless_wp/wp-json";
+const apiEndpoint = "http://normaddict.com/wp-json";
 const blogName = "Travel Blog";
 
 const burgerIcon = document.querySelector(".burger-menu");
