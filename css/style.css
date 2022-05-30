@@ -367,6 +367,7 @@ body {
 }
 
 .dest__img {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -414,14 +415,18 @@ body {
   padding: 2px 4px;
   height: auto;
   cursor: pointer;
+  transition: -webkit-filter 0.2s;
   transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
 }
 
 .gallery:hover .gallery__img {
+  -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
 .gallery .gallery__img:hover {
+  -webkit-filter: none;
   filter: none;
 }
 
@@ -491,6 +496,10 @@ body {
 
 /* About.html style */
 
+.content.about {
+  width: 60%;
+}
+
 .header.about-page {
   height: 30vh;
 }
@@ -503,6 +512,7 @@ body {
 .about-img {
   width: 100%;
   height: 400px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -601,11 +611,13 @@ body {
   display: flex;
   height: 100%;
   justify-content: center;
+  -o-object-fit: cover;
   object-fit: cover;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 
@@ -664,6 +676,10 @@ body {
 
   .footer__content div {
     width: 80%;
+  }
+
+  .content.about {
+    width: 90%;
   }
 }
 
